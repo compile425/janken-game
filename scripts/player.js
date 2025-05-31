@@ -1,5 +1,3 @@
-import { HANDS } from './hands.js';
-
 export class Player {
   constructor(name) {
     this.name = name;
@@ -9,4 +7,4 @@ export class Player {
   chooseHand(hand) {
     this.currentHand = hand;
   }
-};
+}

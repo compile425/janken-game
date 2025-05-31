@@ -1,9 +1,9 @@
-import { HANDS } from './hands.js';
-import { Player } from './player.js';
+import { HANDS } from "./hands.js";
+import { Player } from "./player.js";
 
 export class ComputerPlayer extends Player {
   constructor() {
-    super('コンピューター');
+    super("コンピューター");
   }
 
   chooseHand() {
@@ -16,19 +16,22 @@ export class ComputerPlayer extends Player {
 export class CheatComputerPlayer extends ComputerPlayer {
   constructor() {
     super();
-    this.name = 'チートコンピューター';
+    this.name = "チートコンピューター";
   }
 
   chooseHand(playerHand) {
     switch (playerHand) {
-        case HANDS.ROCK: this.currentHand = HANDS.SCISSORS;
+      case HANDS.ROCK:
+        this.currentHand = HANDS.SCISSORS;
         break;
-        case HANDS.SCISSORS: this.currentHand = HANDS.PAPER;
+      case HANDS.SCISSORS:
+        this.currentHand = HANDS.PAPER;
         break;
-        case HANDS.PAPER: this.currentHand = HANDS.ROCK;
+      case HANDS.PAPER:
+        this.currentHand = HANDS.ROCK;
         break;
-        default: super.chooseHand();
+      default:
+        super.chooseHand();
     }
   }
-
 }

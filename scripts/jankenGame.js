@@ -1,6 +1,6 @@
-import { HANDS } from './hands.js';
-import { Player } from './player.js';
-import { ComputerPlayer, CheatComputerPlayer } from './computerPlayer.js';
+import { HANDS } from "./hands.js";
+import { Player } from "./player.js";
+import { ComputerPlayer, CheatComputerPlayer } from "./computerPlayer.js";
 
 export class JankenGame {
   constructor(playerName) {
@@ -9,10 +9,10 @@ export class JankenGame {
   }
 
   setComputerType(type) {
-    if (type === 'normal') {
+    if (type === "normal") {
       this.computer = new ComputerPlayer();
     } else {
-        this.computer = new CheatComputerPlayer();
+      this.computer = new CheatComputerPlayer();
     }
   }
 
@@ -25,21 +25,22 @@ export class JankenGame {
     }
     const playerHand = this.player.currentHand;
     const computerHand = this.computer.currentHand;
-    let result = '';
+    let result = "";
     if (playerHand === computerHand) {
-      result = 'draw';
-    } else if ( (playerHand === HANDS.ROCK && computerHand === HANDS.SCISSORS) ||
-                (playerHand === HANDS.SCISSORS && computerHand === HANDS.PAPER) ||
-                (playerHand === HANDS.PAPER && computerHand === HANDS.ROCK) ){
-      result = 'win';
+      result = "draw";
+    } else if (
+      (playerHand === HANDS.ROCK && computerHand === HANDS.SCISSORS) ||
+      (playerHand === HANDS.SCISSORS && computerHand === HANDS.PAPER) ||
+      (playerHand === HANDS.PAPER && computerHand === HANDS.ROCK)
+    ) {
+      result = "win";
     } else {
-        result = 'lose';
+      result = "lose";
     }
     return {
       playerHand: playerHand,
       computerHand: computerHand,
-      result: result
+      result: result,
     };
   }
-
 }
