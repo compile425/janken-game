@@ -58,6 +58,7 @@ Ritwick Dey 作の「Live Server」を選択して　　
 <リポジトリのURL> の部分は、実際のじゃんけんゲームのリポジトリの URL に置き換えてください。  
 (例: https://github.com/あなたのユーザー名/janken-game.git)
 
+Bash
 git clone <リポジトリのURL>
 Use code with caution.
 Bash
