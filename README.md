@@ -58,9 +58,10 @@ Ritwick Dey 作の「Live Server」を選択して　　
 <リポジトリのURL> の部分は、実際のじゃんけんゲームのリポジトリの URL に置き換えてください。  
 (例: https://github.com/あなたのユーザー名/janken-game.git)
 
-Bash
+```
 git clone <リポジトリのURL>
 Use code with caution.
+```
 
 コマンドが成功すると、  
 カレントディレクトリにリポジトリ名のフォルダ（例: janken-game）が作成され、  
@@ -72,10 +73,12 @@ Use code with caution.
 方法1: ターミナルから  
 ターミナルで、クローンしたフォルダに移動し、以下のコマンドを実行します。  
 
+
+```
 cd <リポジトリ名>  # 例: cd janken-game
 code .
 Use code with caution.
-Bash
+```
 
 方法2: VS Code のメニューから  
 
