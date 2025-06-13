@@ -61,7 +61,6 @@ Ritwick Dey 作の「Live Server」を選択して　　
 Bash
 git clone <リポジトリのURL>
 Use code with caution.
-Bash
 
 コマンドが成功すると、  
 カレントディレクトリにリポジトリ名のフォルダ（例: janken-game）が作成され、  
