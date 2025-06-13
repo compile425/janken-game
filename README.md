@@ -77,7 +77,7 @@ Use code with caution.
 ```
 cd <リポジトリ名>  # 例: cd janken-game
 code .
-Use code with caution.
+Use code with caution. #警告文ですが気にしないでください。
 ```
 
 方法2: VS Code のメニューから  
